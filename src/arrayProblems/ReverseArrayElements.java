@@ -20,7 +20,7 @@ public class ReverseArrayElements {
 		
 		//2nd way
 		
-		int i, k, t;
+		int i, t;
 		for(i=0;i<len/2;i++) {
 			t = arr[i];
 			arr[i]= arr[len-i-1];
