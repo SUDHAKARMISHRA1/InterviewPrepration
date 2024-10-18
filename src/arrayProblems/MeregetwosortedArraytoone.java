@@ -16,6 +16,7 @@ public class MeregetwosortedArraytoone {
 		while(i<len1) {
 			sarr[k++]= arr[i++];
 		}
+		System.out.println(k);
 		while(j<len2) {
 			sarr[k++]= arrr[j++];
 		}
