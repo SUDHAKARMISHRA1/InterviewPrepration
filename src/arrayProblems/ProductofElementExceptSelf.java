@@ -1,29 +1,26 @@
 package arrayProblems;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ProductofElementExceptSelf {
-	
-	
+
+
 	public static void main(String[] args) {
 		int arr[] = {1,2,3,4,5};
 		int len = arr.length;
-		int multiple =1;
-		ArrayList<Integer> ar = new ArrayList<Integer>();
+		int arr3[] = new int[len];
+		Arrays.fill(arr3, 1);
+		System.out.println(Arrays.toString(arr3));
 		for(int i=0;i<len;i++) {
-			for(int j=i;j<len;j++) {
-				multiple = multiple * arr[j];
+			for(int j=0;j<len;j++) {
+				if(i!=j) {
+					arr3[i]=  arr3[i]*arr[j];
+				}
 			}
-			if(arr[i]==1) {
-				ar.add(multiple);
-				multiple = 1;
-			}else {
-			multiple = multiple - arr[i];
-			System.out.println(multiple);
-			ar.add(multiple);
-			multiple = 1;}
+
 		}
-		System.out.println(ar);
+
+		System.out.println(Arrays.toString(arr3));
 	}
 
 }
