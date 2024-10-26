@@ -1,4 +1,4 @@
-package arrayProblems;
+package SetwithArray;
 
 import java.util.ArrayList;
 

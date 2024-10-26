@@ -1,4 +1,4 @@
-package arrayProblemsset2;
+package SetwithArray;
 
 public class ArrayisSubset {
 	

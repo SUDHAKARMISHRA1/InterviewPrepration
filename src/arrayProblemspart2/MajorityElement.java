@@ -1,4 +1,4 @@
-package arrayProblemsset2;
+package arrayProblemspart2;
 
 public class MajorityElement {
 
