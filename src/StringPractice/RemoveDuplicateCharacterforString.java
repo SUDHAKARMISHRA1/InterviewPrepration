@@ -10,19 +10,19 @@ public class RemoveDuplicateCharacterforString {
 		int len = name.length();
 		
 		
-		//2nd way
-//		String clean = "";
-//		for(int i=0;i<len;i++) {
-//			for(int j=i+1;j<len;j++) {
-//				if(name.charAt(i)!=name.charAt(j)) {
-//					if(clean.contains(Character.toString(name.charAt(i)))==false) {
-//						clean = clean + name.charAt(i);
-//					}
-//				}
-//			}
-//		}
-//		
-//		System.out.println(clean);
+		String clean = "";
+		for(int i=0;i<len;i++) {
+			for(int j=i+1;j<len;j++) {
+				if(name.charAt(i)!=name.charAt(j)) {
+					if(clean.contains(Character.toString(name.charAt(i)))==false) {
+						clean = clean + name.charAt(i);
+					}
+				}
+			}
+		}
+		
+		
+		System.out.println(clean);
 		
 		
 		//1st way
