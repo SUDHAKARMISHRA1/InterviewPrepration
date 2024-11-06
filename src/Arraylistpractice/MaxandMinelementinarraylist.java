@@ -25,9 +25,6 @@ public class MaxandMinelementinarraylist {
 		System.out.println(big);
 		System.out.println(small);
 		
-		
-		
-		
 		//1st  way
 		int max = Collections.max(ar);
 		int min = Collections.min(ar);
