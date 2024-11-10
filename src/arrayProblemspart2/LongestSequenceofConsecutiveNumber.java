@@ -17,7 +17,7 @@ public class LongestSequenceofConsecutiveNumber {
 					ar.add(arr[j]);
 				}
 			}
-			
+			System.out.println(ar);
 		}
 		
 	}
