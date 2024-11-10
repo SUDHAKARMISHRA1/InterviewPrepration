@@ -2,18 +2,18 @@ package Arraylistpracticepart2;
 
 import java.util.ArrayList;
 
-public class largestfrequencyelement {
+public class frequencyofminimumoccurance {
 	
 	public static void main(String[] args) {
 		ArrayList<Integer> ar = new ArrayList<Integer>();
 		ar.add(1);
-		ar.add(3);
+		ar.add(1);
+		ar.add(4);
+		ar.add(4);
 		ar.add(4);
 		ar.add(2);
-		ar.add(6);
 		ar.add(5);
-		ar.add(2);
-		ar.add(2);
+		ar.add(5);
 		int len1 = ar.size();
 		int freq =1;
 		int fnum =ar.get(0);
@@ -25,10 +25,11 @@ public class largestfrequencyelement {
 			}
 		}
 		if(freq<num) {
+			num =0;
+			
+		}else {
 			freq = num;
 			fnum = ar.get(i);
-		}else {
-			num =0;
 		}
 		}
 		System.out.println(freq);
