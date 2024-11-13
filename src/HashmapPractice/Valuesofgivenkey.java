@@ -10,7 +10,6 @@ public class Valuesofgivenkey {
 		hm.put(1, 3);
 		hm.put(2, 4);
 		int key =4;
-		int len = hm.size();
 		Iterator<Integer> it = hm.keySet().iterator();
 		while(it.hasNext()) {
 			Integer k = it.next();

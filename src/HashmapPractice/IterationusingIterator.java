@@ -12,7 +12,6 @@ public class IterationusingIterator {
 		hm.put("age", "25");
 		hm.put("nam", "Sudakar");
 		hm.put("ag", "5");
-		int len = hm.size();
 		Iterator<Map.Entry<String, String>> it = hm.entrySet().iterator();
 		while(it.hasNext()) {
 			Map.Entry<String, String> entry = it.next();
