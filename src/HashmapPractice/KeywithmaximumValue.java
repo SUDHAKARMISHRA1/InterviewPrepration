@@ -1,7 +1,8 @@
 package HashmapPractice;
 
-import java.util.Collections;
+import java.util.*;
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class KeywithmaximumValue {
 	
@@ -11,9 +12,13 @@ public class KeywithmaximumValue {
 		hm.put(2, 4);
 		hm.put(3, 12);
 		hm.put(4, 4);
-		System.out.println(Collections.max(hm.values()));
-		System.out.println(Collections.max(hm.keySet()));
+		int maxval = Collections.max(hm.values());
 		
+		for(Entry<Integer,Integer> k :hm.entrySet()) {
+			if(k.getValue()==maxval) {
+				System.out.println(k.getKey());
+			}
+		}
 		
 	}
 
